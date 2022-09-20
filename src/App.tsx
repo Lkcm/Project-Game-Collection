@@ -1,20 +1,23 @@
 import './styles/main.css'
 import gameImg from '../public/gameImg.png'
 import { Slider } from './components/Slider'
+import { Footer } from './components/Footer'
 
   function App() {
     return (
-    <div className="text-white m-8 mx-20">
-      <div className="flex flex-row-reverse">
+    <div className="text-white ">
+      <div className="flex flex-row-reverse p-10">
       <h1 className="text-xl">My Games Collection</h1>
       </div>
       <div className="flex">
-        <img src={gameImg}></img>
+        <img className="ml-20"src={gameImg}></img>
         <div className="ml-20">
         <p className="text-8xl mb-6">Minecraft</p>
-        <p className="mr-8 text-[20px]">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum consequatur alias corporis 
+        <div className="h-2/4  ">
+        <p className="mr-8 text-[20px] max-w-[70%]">
+        Minecraft é um jogo eletrônico dos gêneros sandbox e sobrevivência que não possui objetivos específicos a serem alcançados, permitindo aos jogadores uma grande liberdade de escolha de como jogá-lo. No entanto, existe um sistema de conquistas, conhecido como "progressos" na edição Java.
         </p>
+        </div>
         <div className="flex mt-12">
         <button 
         className=" 
@@ -28,8 +31,7 @@ import { Slider } from './components/Slider'
           hover:bg-lime-600 
           duration-300 
         "
-        
-        >Baixar</button>
+        >Jogar</button>
         </div>
         </div>
       </div>
