@@ -1,16 +1,22 @@
 import './styles/main.css'
 import gameImg from '../public/gameImg.png'
 import { Slider } from './components/Slider'
-import { Footer } from './components/Footer'
 
   function App() {
+
+function gameImge() {
+  "https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-480x500.jpg"
+}
+
+
+
     return (
     <div className="text-white ">
       <div className="flex flex-row-reverse p-10">
       <h1 className="text-xl">My Games Collection</h1>
       </div>
       <div className="flex">
-        <img className="ml-20"src={gameImg}></img>
+        <img className="ml-20 rounded-2xl" src={gameImge}/>
         <div className="ml-20">
         <p className="text-8xl mb-6">Minecraft</p>
         <div className="h-2/4  ">
